@@ -920,7 +920,8 @@ select:hover {
     content: '';
     background-color: rgba(255, 166, 0, 0.2);
     width: 0%;
-    height: 100%;
+    top: 0;
+    bottom: 0;
     position: absolute;
     right: 0;
     -webkit-transition: 0.4s;
