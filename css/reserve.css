@@ -1,0 +1,998 @@
+@charset "UTF-8";
+.section_banner {
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%;
+  background-image: url("../pic/reserve/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.title_logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.logo_move {
+  font-size: 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-animation: logo_moves 8s linear infinite;
+          animation: logo_moves 8s linear infinite;
+}
+
+@-webkit-keyframes logo_moves {
+  0% {
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+  }
+  40% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  50% {
+  }
+  60% {
+  }
+  70% {
+  }
+  80% {
+  }
+  90% {
+    -webkit-transform: translate(50%, 0%);
+            transform: translate(50%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
+  }
+}
+
+@keyframes logo_moves {
+  0% {
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+  }
+  40% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  50% {
+  }
+  60% {
+  }
+  70% {
+  }
+  80% {
+  }
+  90% {
+    -webkit-transform: translate(50%, 0%);
+            transform: translate(50%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
+  }
+}
+
+.logo_cake, .logo_pen {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo_cake {
+  -webkit-animation: logo_cake 8s linear infinite;
+          animation: logo_cake 8s linear infinite;
+}
+
+@-webkit-keyframes logo_cake {
+  0% {
+    opacity: 0;
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(-90deg);
+            transform: translate(-20%, 0) rotateY(-90deg);
+  }
+  35% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(-90deg);
+            transform: translate(-20%, 0) rotateY(-90deg);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: translate(-20%, 0) rotateY(0deg);
+            transform: translate(-20%, 0) rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(-20%, 0) rotateY(0deg);
+            transform: translate(-20%, 0) rotateY(0deg);
+  }
+  55% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(90deg);
+            transform: translate(-20%, 0) rotateY(90deg);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(90deg);
+            transform: translate(-20%, 0) rotateY(90deg);
+  }
+  70% {
+  }
+  80% {
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+
+@keyframes logo_cake {
+  0% {
+    opacity: 0;
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(-90deg);
+            transform: translate(-20%, 0) rotateY(-90deg);
+  }
+  35% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(-90deg);
+            transform: translate(-20%, 0) rotateY(-90deg);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: translate(-20%, 0) rotateY(0deg);
+            transform: translate(-20%, 0) rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(-20%, 0) rotateY(0deg);
+            transform: translate(-20%, 0) rotateY(0deg);
+  }
+  55% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(90deg);
+            transform: translate(-20%, 0) rotateY(90deg);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate(-20%, 0) rotateY(90deg);
+            transform: translate(-20%, 0) rotateY(90deg);
+  }
+  70% {
+  }
+  80% {
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+
+.logo_main {
+  -webkit-animation: logo_main 8s linear infinite;
+          animation: logo_main 8s linear infinite;
+}
+
+@-webkit-keyframes logo_main {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  55% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+
+@keyframes logo_main {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  55% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  90% {
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+
+.logo_pen {
+  -webkit-animation: logo_pen 8s linear infinite;
+          animation: logo_pen 8s linear infinite;
+}
+
+@-webkit-keyframes logo_pen {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+  }
+  50% {
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translate(-10%, 0) rotateY(0deg);
+            transform: translate(-10%, 0) rotateY(0deg);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translate(-10%, 0) rotateY(0deg);
+            transform: translate(-10%, 0) rotateY(0deg);
+  }
+  95% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+}
+
+@keyframes logo_pen {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+  }
+  50% {
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(-90deg);
+            transform: translate(-10%, 0) rotateY(-90deg);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translate(-10%, 0) rotateY(0deg);
+            transform: translate(-10%, 0) rotateY(0deg);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translate(-10%, 0) rotateY(0deg);
+            transform: translate(-10%, 0) rotateY(0deg);
+  }
+  95% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-10%, 0) rotateY(90deg);
+            transform: translate(-10%, 0) rotateY(90deg);
+  }
+}
+
+/* 預定頁面 */
+.order_date {
+  border: 3px double rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.order_radiobox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.order_radiobox input::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 0px;
+  height: 0;
+  width: 0;
+  -webkit-transform: translate(0, -50%) rotate(45deg);
+          transform: translate(0, -50%) rotate(45deg);
+}
+
+.order_radiobox input::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px dotted rgba(0, 0, 0, 0.8);
+}
+
+.order_radiobox input:checked::after {
+  opacity: 0;
+  border-radius: 0%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.order_radiobox input:checked::before {
+  border-right: 4px solid #ffa600;
+  border-bottom: 4px solid #ffa600;
+  width: 10px;
+  height: 15px;
+  -webkit-transform: translate(0, -30%) rotate(45deg);
+          transform: translate(0, -30%) rotate(45deg);
+}
+
+.order_radiobox input:checked {
+  cursor: default;
+}
+
+.order_radiobox input:checked + label {
+  cursor: default;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  height: 60px;
+  /*  */
+  background-image: url("../pic/reserve/selectimg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+select:hover {
+  background-position: center;
+}
+
+#booking_time, #booking_name, #booking_select, #booking_phone, #booking_more, #order_hour {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border: 1px dotted rgba(0, 0, 0, 0.8);
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+  text-align: center;
+  max-width: 700px;
+}
+
+.order_radiobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order_submitbox {
+  font-size: 0;
+}
+
+#booking_more {
+  height: 100px;
+}
+
+.order_date {
+  text-align: center;
+}
+
+#booking_submit {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 50%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.radio_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* 選擇老闆 */
+.order_title {
+  border-bottom: 0px;
+}
+
+#choosestore {
+  color: #AB7325;
+}
+
+.store_box {
+  max-width: 1200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.store_box .labelhover {
+  cursor: pointer;
+}
+
+#restore {
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  margin: auto;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  position: relative;
+}
+
+#restore::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 0;
+  background-color: rgba(255, 166, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#restore:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.order_title {
+  width: 101%;
+}
+
+.input_store {
+  display: none;
+}
+
+.store_box .labelhover {
+  width: 50%;
+  padding-bottom: 50%;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.store_box img {
+  height: 80%;
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.label_storeboss1 {
+  background-image: url("../pic/reserve/cat1back.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+.label_storeboss1 img {
+  left: -50%;
+  bottom: 0;
+}
+
+.label_storeboss2 {
+  background-image: url("../pic/reserve/cat2back.jpg");
+  background-position: left center;
+  background-size: cover;
+}
+
+.label_storeboss2 img {
+  right: -50%;
+  bottom: 0;
+}
+
+.store_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+}
+
+.label_storeboss1:hover img {
+  left: 10%;
+}
+
+.label_storeboss2:hover img {
+  right: 10%;
+}
+
+.label_storeboss1:hover .store_text {
+  opacity: 0;
+}
+
+.label_storeboss2:hover .store_text {
+  opacity: 0;
+}
+
+.store_box:hover .labelhover {
+  width: 40%;
+}
+
+.store_box .labelhover:hover {
+  width: 60%;
+}
+
+.store_text p {
+  opacity: 0;
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#input_storeboss1:checked ~ .label_storeboss1 {
+  width: 100%;
+  z-index: 1;
+  cursor: default;
+}
+
+#input_storeboss1:checked ~ .label_storeboss2 {
+  width: 0%;
+  opacity: 0;
+}
+
+#input_storeboss2:checked ~ .label_storeboss1 {
+  width: 0%;
+  opacity: 0;
+}
+
+#input_storeboss2:checked ~ .label_storeboss2 {
+  width: 100%;
+  cursor: default;
+}
+
+#input_storeboss1:checked ~ .label_storeboss1 .store_text {
+  opacity: 1;
+}
+
+#input_storeboss1:checked ~ .label_storeboss1 .store_text p {
+  opacity: 1;
+  display: inline;
+}
+
+#input_storeboss2:checked ~ .label_storeboss2 .store_text {
+  opacity: 1;
+}
+
+#input_storeboss2:checked ~ .label_storeboss2 .store_text p {
+  opacity: 1;
+  display: inline;
+}
+
+#input_storeboss1:checked ~ .label_storeboss1 img {
+  left: 5px;
+}
+
+#input_storeboss2:checked ~ .label_storeboss2 img {
+  right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_banner {
+    margin-bottom: 80px;
+  }
+  .banner_title {
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 8%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .logo_main, .logo_pen {
+    max-height: 120px;
+  }
+  .logo_cake {
+    max-height: 130px;
+  }
+  /* 預購畫面 */
+  .section_order {
+    width: 90%;
+    margin: 80px auto;
+  }
+  .table_displaynone {
+    display: none;
+  }
+  /* 預約店面 */
+  .section_store {
+    margin: 80px auto 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section_banner {
+    width: 100%;
+    padding-bottom: 70%;
+    margin: 0 auto 100px;
+  }
+  .banner_title {
+    position: absolute;
+    width: 30%;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 25%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .logo_main, .logo_pen {
+    max-height: 170px;
+  }
+  .logo_cake {
+    max-height: 185px;
+  }
+  /* 選擇店面 */
+  .store_text {
+    padding: 10px;
+  }
+  .store_text p {
+    font-size: 20px;
+  }
+  .section_store {
+    max-width: 1200px;
+    width: 80%;
+    margin: 100px auto 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  /* 預購畫面 */
+  .phone_displaynone {
+    display: none;
+  }
+  .section_order {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto 100px;
+  }
+  .table_order {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 30px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+  .order_info {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .table_order caption {
+    padding: 10px;
+  }
+  .table_order td, .table_order th {
+    border: 3px dashed transparent;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    /* border-color: rgba(0,0,0 ,0.8); */
+  }
+  .table_order th {
+    cursor: default;
+    padding: 10px;
+    background-color: rgba(0, 166, 255, 0.2);
+  }
+  /* td::after {
+        content: '';
+        background-color: rgba(255, 166, 0, 0.1);
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+    .table_order td:hover::after {
+        width: 100%;
+        transition: 0.4s;
+    } */
+  td::before {
+    content: '';
+    background-color: rgba(255, 166, 0, 0.2);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%);
+            clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%);
+  }
+  .table_order td:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  td {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    /* background-image: url(../pic/reserve/2-1.gif); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  td:empty {
+    cursor: default;
+  }
+  .order_radiobox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .radio_box {
+    margin: 40px;
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+  .radio_box label {
+    padding: 10px;
+    cursor: pointer;
+  }
+  #booking_submit {
+    height: 60px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  #order_hour, #booking_time {
+    width: 40%;
+    margin: 20px;
+    cursor: pointer;
+  }
+  #booking_time {
+    cursor: default;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section_banner {
+    padding-bottom: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_banner {
+    padding-bottom: 0;
+    height: 80vh;
+  }
+  .logo_main, .logo_pen {
+    max-height: 250px;
+  }
+  .logo_cake {
+    max-height: 285px;
+  }
+  /* 選擇店面 */
+  .store_text {
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=reserve.css.map */

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Shortcut Icon" type="image/x-icon" href="pic/all/favicon.ico" />
+    <title>喵咪小廚</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 分享設定 -->
+
+    <meta name="keywords" content="喵咪小廚,">
+    <meta name="description" content="就是喵咪小廚喔">
+    <meta name="thumbnail" content="http://140.115.236.71/demo-personal/DD102/web/I1900510/pic/reserve/logopencat.png" />
+    <!-- 分享facebook -->
+
+    <meta property="og:url" content="http://140.115.236.71/demo-personal/DD102/web/I1900510/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="喵咪小廚" />
+    <meta property="og:description" content="就是喵咪小廚喔" />
+    <meta property="og:image" content="http://140.115.236.71/demo-personal/DD102/web/I1900510/pic/reserve/logopencat.png" />
+
+    <!-- 分享facebook -->
+</head>
+
+<body>
+    <header id='header_small' class="header_box">
+        <!-- header_small -->
+        <h1 class="displaynone">喵咪小廚</h1>
+        <a id="logo" href="index.html"><img src="pic/all/LOGO.png" alt="喵咪小廚"></a>
+        <input type="checkbox" name="input_nav" id="input_nav" class="displaynone">
+        <label class="nav_burger" for="input_nav"><span></span></label>
+        <nav class="noto">
+            <h6 class="displaynone">主選單</h6>
+            <a href="index.html"><img src="pic/all/LOGO.png" alt="喵咪小廚"></a>
+            <ul>
+                <li><a href="special.html">特色 <p class="lemo">special</p> </a></li>
+                <li><a href="menu.html">料理 <p class="lemo">menu</p> </a></li>
+                <li><a href="reserve.html">預約 <p class="lemo">reserve</p> </a></li>
+                <li><a href="present.html">禮品 <p class="lemo">present</p> </a></li>
+                <li class="ul_socialocon">
+                    <a href="#"><img src="pic/all/021-line.png" alt="line"></a>
+                    <a href="#"><img src="pic/all/021-twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="pic/all/021-facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="pic/all/021-instagram.png" alt="instagram"></a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+
+            <label class="nav_fix" for="input_nav"></label>
+        </nav>
+    </header>
+
+
+    <section class="section_banner" id="section_banner">
+        <div id='banner_group' class="banner_group">
+            <div id="banner_group0" class="group_news">
+                <div class="group_textcontainer">
+                    <h3 class="noto">最新消息</h3>
+                    <h4 class="lemo">News</h4>
+                    <input type="radio" name="input_banner" id="input_banner1" class="displaynone input_banner">
+                    <p class="noto">用當季鮮採莓果裝飾，酥脆堅果碎片佈滿派皮一口咬下完美結合！每周新菜色推出！</p>
+                    <label for="input_banner1"><a class="noto" href="reserve.html">立即預約</a></label>
+                </div>
+            </div>
+            <div id="banner_group1" class="group_newrecipe">
+                <div class="group_textcontainer">
+                    <h3 class="noto">鮮莓碎堅果派</h3>
+                    <h4 class="lemo">New recipe</h4>
+                    <input type="radio" name="input_banner" id="input_banner2" class="displaynone input_banner">
+                    <p class="noto">用當季鮮採莓果裝飾，酥脆堅果碎片佈滿派皮一口咬下完美結合！每周新菜色推出！</p>
+                    <label for="input_banner2"><a class="noto" href="reserve.html">立即預約</a></label>
+                </div>
+            </div>
+            <div id="banner_group2" class="group_about">
+                <div class="group_textcontainer">
+                    <h3 class="noto">關於我們</h3>
+                    <h4 class="lemo">About us</h4>
+                    <input type="radio" name="input_banner" id="input_banner3" class="displaynone input_banner">
+                    <p class="noto">用當季鮮採莓果裝飾，酥脆堅果碎片佈滿派皮一口咬下完美結合！每周新菜色推出！</p>
+                    <label for="input_banner3"><a class="noto" href="reserve.html">立即預約</a></label>
+                </div>
+            </div>
+            <div id="banner_group3" class="group_hot">
+                <div class="group_textcontainer">
+                    <h3 class="noto">新鮮原料</h3>
+                    <h4 class="lemo">Hot recipe</h4>
+                    <input type="radio" name="input_banner" id="input_banner4" class="displaynone input_banner">
+                    <p class="noto">用當季鮮採莓果裝飾，酥脆堅果碎片佈滿派皮一口咬下完美結合！每周新菜色推出！</p>
+                    <label for="input_banner4"><a class="noto" href="reserve.html">立即預約</a></label>
+                </div>
+            </div>
+        </div>
+        <div class="banner_times">
+            <div class="arrowbox" onclick="moveBannerTimesLeft()">
+                <img class="arrow" src="pic/index/banner/left.png" alt="箭頭">
+            </div>
+            <img class="times_pic choose" src="pic/index/banner/catfooter.png" alt="貓腳印" onclick="moveBanner1()">
+            <img class="times_pic" src="pic/index/banner/catfooter.png" alt="貓腳印" onclick="moveBanner2()">
+            <img class="times_pic" src="pic/index/banner/catfooter.png" alt="貓腳印" onclick="moveBanner3()">
+            <img class="times_pic" src="pic/index/banner/catfooter.png" alt="貓腳印" onclick="moveBanner4()">
+            <div class="arrowbox" onclick="moveBannerTimesRight()">
+                <img class="arrow" src="pic/index/banner/right.png" alt="箭頭">
+            </div>
+        </div>
+    </section>
+
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3"></script>
+
+
+    <div class="fb-share-button" data-href="http://140.115.236.71/demo-personal/DD102/web/I1900510/index.html"
+        data-layout="button_count" data-size="small"><a target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F140.115.236.71%2Fdemo-personal%2FDD102%2Fweb%2FI1900510%2Findex.html&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore">分享</a></div> -->
+
+    <!-- <div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3"
+        data-url="http://140.115.236.71/demo-personal/DD102/web/I1900510/index.html" data-color="default"
+        data-size="small" data-count="true" style="display: none;"></div>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async"
+        defer="defer"></script> -->
+
+    <section class="section_food section_mobile_sm section_md">
+        <div class="food_title title_box">
+            <h2 class="noto">料理</h2>
+            <h3 class="lemo">Our menu</h3>
+            <p class="noto">以全新雅食文化，為每一道食物的極致美味重新定義</p>
+        </div>
+        <div class="food_combo">
+            <a href="menu.html"></a>
+            <img src="pic/index/food/food1.jpg" alt="前菜">
+            <div class="food_combotext noto">
+                <h3>前餐</h3>
+                <p>醬燒杏鮑菇</p>
+                <hr>
+                <p>最多人點的菜色，極致美味的完美呈現！</p>
+            </div>
+        </div>
+        <div class="food_combo">
+            <a href="menu.html"></a>
+            <img src="pic/index/food/food2.jpg" alt="主菜">
+            <div class="food_combotext noto">
+                <h3>主餐</h3>
+                <p>炭烤羊排</p>
+                <hr>
+                <p>最多人點的菜色，極致美味的完美呈現！</p>
+            </div>
+        </div>
+        <div class="food_combo">
+            <a href="menu.html"></a>
+            <img src="pic/index/food/food3.jpg" alt="甜點">
+            <div class="food_combotext noto">
+                <h3>甜點</h3>
+                <p>莓果鬆餅</p>
+                <hr>
+                <p>最多人點的菜色，極致美味的完美呈現！</p>
+            </div>
+        </div>
+        <div class="food_combo">
+            <a href="menu.html"></a>
+            <img src="pic/index/food/food4.jpg" alt="飲品">
+            <div class="food_combotext noto">
+                <h3>飲料</h3>
+                <p>檸檬水</p>
+                <hr>
+                <p>最多人點的菜色，極致美味的完美呈現！</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_chef section_mobile_sm">
+        <div class="chef_box">
+            <div class="chef_text title_box">
+                <h2 class="noto">廚師</h2>
+                <h3 class="lemo">Chef</h3>
+                <p class="noto">喵咪小廚追求極致美味，每次都是完美表現</p>
+            </div>
+            <div class="chef_aboutbox">
+                <div class="chef_about">
+                    <a href="special.html">
+                        <img src="pic/index/chef/chef01.jpg" alt="Thomas">
+                        <h3 class="lemo">Thomas</h3>
+                        <p class="noto text_sm">
+                            他說：“我想通過精心挑選的食材、地道純正的備料及烹飪方式，以及最終呈盤的藝術，讓每一款菜品都能盡展最佳風味，充分發揮其內在精髓。無論是餐前小點、主菜抑或餐后甜點，都應該令賓客一見傾心，盡情沉醉於色、香、味的美妙境界中。”
+                        </p>
+                    </a>
+                </div>
+                <div class="chef_about">
+                    <a href="special.html">
+                        <img src="pic/index/chef/chef02.jpg" alt="Lina">
+                        <h3 class="lemo">Lina</h3>
+                    </a>
+                </div>
+                <div class="chef_about">
+                    <a href="special.html">
+                        <img src="pic/index/chef/chef03.jpg" alt="Bocuse">
+                        <h3 class="lemo">Bocuse</h3>
+                    </a>
+                </div>
+                <div class="chef_about">
+                    <a href="special.html">
+                        <img src="pic/index/chef/chef04.jpg" alt="Passade">
+                        <h3 class="lemo">Passade</h3>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_special section_mobile section_md">
+        <div class="special_textbox title_box">
+            <h2 class="noto">特色</h2>
+            <h3 class="lemo">Special</h3>
+            <p class="noto">用可愛慵懶的貓咪，營造寧靜悠閒的放鬆環境</p>
+        </div>
+        <div class="special_imgbox">
+            <img class="special_hightcat" src="pic/index/special/image-10.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-11.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-13.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-02.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-12.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-40.jpg" alt="貓咪風情">
+            <img class="special_cat" src="pic/index/special/image-16.jpg" alt="貓咪風情">
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+
+    <section class="section_boss">
+        <div class="boss_img"></div>
+        <div class="boss_textbox">
+            <h2 class="noto">理念</h2>
+            <h3 class="lemo">Concept</h3>
+            <br>
+            <h5 class="lemo">RespectFor Food，ForCustomers，ForYourself</h5>
+            <br>
+            <p class="noto">－－尊重食物，尊重顧客，最重要是尊重身為廚師的自己。
+                “你要發自內心地相信自己的價值。做廚師不是讓客人吃飽就夠了，而是一種情感的分享，你要把你喜歡的，你愛的，通過雙手製作出來，傳遞給別人。如果你不覺得這是值得驕傲的，那麼你身為廚師，就無法帶給別人快樂的感覺。
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <section class="section_item section_mobile_sm section_md">
+        <div class="section_itemtext title_box">
+            <h2 class="noto">禮品</h2>
+            <h3 class="lemo">Present</h3>
+            <p class="noto">看到、使用過你喜歡的，就順手增添生活的色彩吧</p>
+        </div>
+
+        <div class="item_slidebox noto">
+            <div class="item_slide slide_right">
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present11.jpg">
+                        <span>椰子奶</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present13.jpg">
+                        <span>甜菜根</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present11.jpg">
+                        <span>椰子奶</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present13.jpg">
+                        <span>甜菜根</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present11.jpg">
+                        <span>椰子奶</span>
+                    </a>
+                </div>
+                <div class="item_triangle_right">
+                    <label class="noto" for="">食材</label>
+                </div>
+            </div>
+            <div class="item_slide slide_left">
+                <div class="item_triangle_left">
+                    <label class="noto" for="">禮盒</label>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present21.jpg">
+                        <span>鳳凰酥</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present21.jpg">
+                        <span>鳳凰酥</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present21.jpg">
+                        <span>鳳凰酥</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present21.jpg">
+                        <span>鳳凰酥</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present21.jpg">
+                        <span>鳳凰酥</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item_slidebox noto">
+            <div class="item_slide slide_right">
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present31.jpg">
+                        <span>堤拉米千層派</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present32.jpg">
+                        <span>莓果鬆餅</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present33.jpg">
+                        <span>杯子蛋糕</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present31.jpg">
+                        <span>堤拉米千層派</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present32.jpg">
+                        <span>莓果鬆餅</span>
+                    </a>
+                </div>
+                <div class="item_triangle_right">
+                    <label class="noto" for="">甜點</label>
+                </div>
+            </div>
+            <div class="item_slide slide_left">
+                <div class="item_triangle_left">
+                    <label class="noto" for="">小物</label>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present41.jpg">
+                        <span>驚喜禮盒</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present41.jpg">
+                        <span>驚喜禮盒</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present41.jpg">
+                        <span>驚喜禮盒</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present41.jpg">
+                        <span>驚喜禮盒</span>
+                    </a>
+                </div>
+                <div class="item_inslide">
+                    <a href="present.html"><img src="pic/index/present/present41.jpg">
+                        <span>驚喜禮盒</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_gallery">
+        <div class="gallery_title title_box">
+            <h2 class="noto">菜單</h2>
+            <h3 class="lemo">gallery</h3>
+        </div>
+        <input type="checkbox" name="gallery_check" id="gallery_check">
+        <div class="gallery_imggroup">
+            <label class="gallery_arrowleft" for="gallery_check"></label>
+            <label class="gallery_arrowright" for="gallery_check"></label>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery01.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery01_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery02.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery02_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery03.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery03_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery04.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery04_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery05.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery05_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery06.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery06_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery07.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery07_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery08.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery08_ch.jpg" alt="餐廳菜品"></div>
+            <div onclick="location.href='menu.html'" class="gallery_imgbox"><img src="pic/index/gallery/gallery09.jpg"
+                    alt="餐廳菜品"><img class="gallery_img" src="pic/index/gallery/gallery09_ch.jpg" alt="餐廳菜品"></div>
+        </div>
+
+    </section>
+
+    <section class="section_footer noto">
+        <div class="footer_box">
+            <a href="index.html"><img src="pic/all/LOGO.png" alt="貓咪小廚"></a>
+            <a href="#">最新消息</a>
+            <a href="#">經營理念</a>
+            <a href="#">捐款歷史</a>
+            <a href="#">企業資訊</a>
+            <a href="#">我要應徵</a>
+        </div>
+    </section>
+
+
+    <footer>&copy;copy by 喵咪小廚 2019</footer>
+
+    <script src="js/index.js"></script>
+    <script>
+        window.addEventListener('load', init, false);
+        window.addEventListener('resize', reSize, false);
+        window.addEventListener('scroll', scrollTop, false);
+
+        function init() {
+            getId();
+            reSize();
+            moveBannerTimesRight();
+            touchmoveBanner();
+        }
+
+        function scrollTop() {
+            var viewScroll = document.documentElement.scrollTop; //偵測滑鼠滾動位置
+            var viewhight = parseInt(window.outerHeight) //偵測高度
+            var header_small = document.getElementById('header_small');
+            if (viewScroll > 200) {
+                header_small.classList.add('header_small');
+            } else {
+
+                header_small.classList.remove('header_small');
+            }
+            arrowMove(viewScroll, viewhight);
+        }
+
+        function reSize() {
+            if (bannerWidth > 1200) {
+                for (let i = 0; i <= 1; i++) {
+                    slide_lefts[i].addEventListener('mouseover', (function () {
+                        slide_rights[i].classList.add('moveright');
+                        // console.log('近來');
+                    }), false);
+                    slide_lefts[i].addEventListener('mouseout', (function () {
+                        slide_rights[i].classList.remove('moveright');
+                        // console.log('出去');
+                    }), false);
+                }
+            } else {
+                for (let i = 0; i <= 1; i++) {
+                    slide_lefts[i].removeEventListener('mouseover', (function () {
+                        slide_rights[i].classList.add('moveright');
+                        // console.log('近來');
+                    }), false);
+                    slide_lefts[i].removeEventListener('mouseout', (function () {
+                        slide_rights[i].classList.remove('moveright');
+                        // console.log('出去');
+                    }), false);
+                }
+            }
+            bannerWidth = section_banner.offsetWidth;
+            for (let i = 0; i < banner_group.length; i++) {
+                banner_group[i].style.transform = `rotateY(${i * 90}deg) translateZ(${(bannerWidth) / 2}px)`;
+            }
+            dice.style.transform = `translateZ(${- (bannerWidth) / 2}px) rotateY(${time * 90}deg)`;
+        }
+    </script>
+</body>
+
+</html>

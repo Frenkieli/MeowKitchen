@@ -1,0 +1,591 @@
+.section_banner {
+    width: 100%;
+    position: relative;
+    padding-bottom: 80%;
+    background-image: url('../pic/present/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.title_logo {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: flex-end;
+}
+
+.logo_jump img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    margin: auto;
+    vertical-align: middle;
+}
+
+.logo_jump {
+    width: 40%;
+    padding-bottom: 30%;
+    position: relative;
+    transform-origin: center bottom;
+}
+
+.jump_animation {
+    animation: catjump1 8s linear infinite;
+}
+
+.title_logo img {
+    max-width: 400px;
+}
+
+.logo_stand img {
+    max-width: 200px;
+}
+
+@keyframes catjump1 {
+    0% {
+        transform: rotate(-140deg);
+    }
+    12.5% {
+        transform: rotate(-140deg);
+    }
+    25% {
+        transform: rotate(-140deg);
+    }
+    37.5% {
+        transform: rotate(140deg);
+    }
+    50% {}
+    62.5% {}
+    75% {}
+    87.5% {}
+    100% {
+        transform: rotate(140deg);
+    }
+}
+
+.logo_stand {
+    width: 20%;
+    animation: catstand 8s linear infinite;
+    position: relative;
+    transform: translate(0, 100%);
+    text-align: center;
+}
+
+@keyframes catstand {
+    0% {
+        transform: translate(0, 100%);
+    }
+    12.5% {}
+    25% {}
+    37.5% {
+        transform: translate(0, 100%) rotatey(180deg);
+    }
+    42.5% {
+        transform: translate(0, 0%) rotatey(0deg);
+    }
+    50% {}
+    62.5% {}
+    70% {
+        transform: translate(0, 0%) rotatey(0deg);
+    }
+    75% {
+        transform: translate(0, 100%) rotatey(180deg);
+    }
+    87.5% {}
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+.jump_animation2 {
+    animation: catjump2 8s linear infinite;
+}
+
+@keyframes catjump2 {
+    0% {
+        transform: rotate(-140deg);
+    }
+    12.5% {
+        transform: rotate(-140deg);
+    }
+    25% {
+        transform: rotate(-140deg);
+    }
+    37.5% {
+        transform: rotate(-140deg);
+    }
+    50% {}
+    62.5% {}
+    75% {
+        transform: rotate(-140deg);
+    }
+    87.5% {
+        transform: rotate(140deg);
+    }
+    100% {
+        transform: rotate(140deg);
+    }
+}
+
+.logo_stand img {
+    width: 100%;
+}
+
+/* 幻燈片 */
+
+.section_slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.section_sm {
+    padding-bottom: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section_slide .slide_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    /* 到時候再刪掉 */
+    // bottom: 0;
+    // right: -100%;
+}
+
+.slide_rightout {
+    animation: rightout 4s ease-in-out both;
+}
+
+@keyframes rightout {
+    0% {
+        right: 0;
+        bottom: 0;
+        /* background-position-x: -15px; */
+    }
+    25% {
+        right: 100%;
+        bottom: 0;
+    }
+    100% {
+        right: 100%;
+        bottom: 0;
+        /* background-position-x: -15px; */
+    }
+}
+
+.slide_rightin {
+    animation: rightin 4s ease-in-out both;
+}
+
+@keyframes rightin {
+    0% {
+        right: -100%;
+        /* background-position-x: 20px; */
+        bottom: 0;
+        z-index: 1;
+    }
+    25% {
+        right: 0%;
+        /* background-position-x: 15px; */
+        bottom: 0;
+    }
+    100% {
+        right: 0%;
+        /* background-position-x: -15px; */
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.slide_boxtext {
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.slide_rightin .slide_boxtext {
+    animation: righttextin 4s ease-in-out infinite;
+}
+
+@keyframes righttextin {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    25% {
+        opacity: 0;
+        bottom: -50px;
+    }
+    35% {
+        opacity: 1;
+        bottom: 0;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+
+.slide_buttombox {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.slide_buttom {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.slide_buttombox .slide_buttom:first-child {
+    background-color: rgba(255, 166, 0, 0.7);
+}
+
+.slide_buttomblank {
+    width: 50%;
+    height: 5%;
+    background-color: transparent;
+}
+
+/* 賣商品 */
+
+.shopcar_float {
+    width: 60px;
+    float: right;
+    margin-right: 10%;
+    position: sticky;
+    top: 80%;
+    z-index: 3;
+}
+
+.shopcar_float .img_shopcar {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.shopcarnum {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #fa0;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 100%;
+    /* opacity: 0; */
+}
+
+.img_inshopcar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 0;
+}
+
+/* 上面是購物車 */
+
+.sellitem_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.sellitem_container img{
+    vertical-align: middle;
+}
+
+.itembox_textbox a {
+    text-decoration: none;
+    color: #CC962E;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .section_banner {
+        margin-bottom: 80px;
+    }
+    .banner_title {
+        position: absolute;
+        width: 30%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 20px;
+        left: 50%;
+        top: 8%;
+        transform: translate(-50%, 0);
+    }
+    /* 幻燈片 */
+    .section_sm {
+        width: 90%;
+        margin: 80px auto;
+        padding-bottom: 75%;
+    }
+    .section_slide .slide_box:nth-child(1) {
+        background-image: url('../pic/index/food/banner_about_sm.jpg')
+    }
+    .section_slide .slide_box:nth-child(2) {
+        background-image: url('../pic/index/food/banner_food_sm.jpg');
+    }
+    .section_slide .slide_box:nth-child(3) {
+        background-image: url('../pic/index/food/banner_hot_sm.jpg');
+    }
+    /* 賣商品藍 */
+    .section_sellitem {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin: 80px auto;
+    }
+    .sellitem_tabbar ol {
+        display: flex;
+    }
+    .sellitem_tabbar ol li {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .sellitem_item .sellitem_itembox:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    .sellitem_itembox {
+        display: flex;
+        padding: 20px;
+        border-top: 3px double rgba(0, 0, 0, 0.3);
+    }
+    .itembox_imgbox img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    .itembox_imgbox {
+        width: 60%;
+    }
+    .itembox_textbox {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sellitem_tabbar label {
+        display: block;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #input_food:checked~.sellitem_container .sellitem_food {
+        transition: 1s;
+        transform: translate(0%, 0);
+    }
+    #input_gift:checked~.sellitem_container .sellitem_gift {
+        transition: 1s;
+        transform: translate(0%, 0);
+    }
+    #input_dess:checked~.sellitem_container .sellitem_dess {
+        transition: 1s;
+        transform: translate(0%, 0);
+    }
+    #input_pack:checked~.sellitem_container .sellitem_pack {
+        transition: 1s;
+        transform: translate(0%, 0);
+    }
+    #input_food:checked~.sellitem_tabbar .input_food {
+        background-color: #fa0;
+        transition: 1s;
+    }
+    #input_gift:checked~.sellitem_tabbar .input_gift {
+        background-color: #fa0;
+        transition: 1s;
+    }
+    #input_dess:checked~.sellitem_tabbar .input_dess {
+        background-color: #fa0;
+        transition: 1s;
+    }
+    #input_pack:checked~.sellitem_tabbar .input_pack {
+        background-color: #fa0;
+        transition: 1s;
+    }
+    .sellitem_container .sellitem_item:first-child {
+        position: relative;
+    }
+    .sellitem_container .sellitem_item:not(:first-child) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .sellitem_item {
+        transform: translate(150%, 0);
+        width: 100%;
+    }
+    .label_cover{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .section_banner {
+        width: 100%;
+        padding-bottom: 70%;
+        margin: 0 auto 100px;
+    }
+    .banner_title {
+        position: absolute;
+        width: 30%;
+        max-width: 400px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 20px;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, 0);
+    }
+    /* 幻燈片 */
+    .section_sm {
+        max-width: 1200px;
+        width: 80%;
+        padding-bottom: 50%;
+        margin: 100px auto;
+    }
+    .slide_boxtext {
+        padding: 20px;
+    }
+    .section_slide .slide_box:nth-child(1) {
+        background-image: url('../pic/index/banner/banner_about.jpg')
+    }
+    .section_slide .slide_box:nth-child(2) {
+        background-image: url('../pic/index/banner/banner_food.jpg');
+    }
+    .section_slide .slide_box:nth-child(3) {
+        background-image: url('../pic/index/banner/banner_hot.jpg');
+    }
+    /* 賣商品藍 */
+    .sellitem_tabbar {
+        display: none;
+    }
+    .section_sellitem {
+        max-width: 1200px;
+        width: 80%;
+        margin: 100px auto;
+        position: relative;
+    }
+    .sellitem_container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sellitem_item {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden;
+    }
+    .label_cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        font-size: 40px;
+        color: #000;
+        clip-path: circle(100%);
+    }
+    .sellitem_item:hover .label_cover{
+        clip-path: circle(0%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .input_cover:checked + .label_cover{
+        clip-path: circle(0%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .sellitem_item .sellitem_itembox:not(:first-child) {
+        width: 20%;
+        border: 1px dotted rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .sellitem_item .sellitem_itembox:not(:first-child) p, .sellitem_item .sellitem_itembox:not(:first-child) a {
+        display: none;
+    }
+    .sellitem_itembox {
+        position: relative;
+        opacity: 1;
+    }
+    .itembox_textbox {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0;
+    }
+    .sellitem_item .sellitem_itembox:first-child .itembox_textbox {
+        padding: 10px;
+    }
+    .itembox_textbox a {
+        position: absolute;
+        padding: 10px;
+        right: 0;
+        bottom: 0;
+        font-size: 30px;
+    }
+    .sellitem_container img {
+        width: 100%;
+    }
+    /* 購物車 */
+}
+
+@media screen and (min-width:992px) {
+    .section_banner {
+        padding-bottom: 60%;
+    }
+    /* 購物籃 */
+    .sellitem_item {
+        width: 50%;
+    }
+    .sellitem_item .sellitem_itembox:not(:first-child) {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section_banner {
+        padding-bottom: 0;
+        height: 80vh;
+    }
+    /* 幻燈片 */
+}

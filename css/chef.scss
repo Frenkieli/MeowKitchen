@@ -1,0 +1,310 @@
+.section_chef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chef_about {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section_chef::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 2px;
+    width: 100%;
+    border-top: 6px double rgba(0, 151, 197, 0.3);
+    border-bottom: 6px double rgba(0, 151, 197, 0.3);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.chef_img {
+    width: 40%;
+}
+
+.chef_img img, .exp_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 獲獎 */
+
+.section_win {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section_win h2 {
+    width: 80%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.section_win img {
+    width: 40%;
+    flex-grow: 1;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.section_win::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 2px;
+    width: 40%;
+    border-top: 6px double rgba(204, 149, 48, 1);
+    border-bottom: 6px double rgb(221, 165, 61);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.section_win::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 2px;
+    width: 40%;
+    border-top: 6px double rgba(204, 149, 48, 1);
+    border-bottom: 6px double rgb(221, 165, 61);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+/* 麵包 */
+
+.section_step {
+    opacity: 0;
+    transition: 1s;
+    margin: 10px auto;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section_step a {
+    text-decoration: none;
+    color: #fa0;
+    font-size: 20px;
+}
+
+.step_back {
+    float: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 100% 100% 0;
+    position: relative;
+    left: -20%;
+    transition: 1s;
+}
+
+.step_next {
+    float: right;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 100% 0 0 100%;
+    position: relative;
+    right: -20%;
+    transition: 1s;
+}
+
+@media screen and (max-width:767px) {
+    .section_sm {
+        width: 90%;
+        margin: 40px auto;
+    }
+    .section_chef {
+        margin-top: 0;
+    }
+    .section_chef::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 30px solid #FFDC32;
+        border-right: 250px solid transparent;
+    }
+    .exp_img {
+        display: none;
+    }
+    .section_chef::before {
+        top: 10px;
+    }
+    /* 經驗 */
+    .section_exp {
+        display: flex;
+        position: relative;
+    }
+    .section_exp li {
+        list-style: circle;
+        margin: 30px 0;
+        font-size: 16px;
+        position: relative;
+        left: 25px;
+        padding-right: 25px;
+    }
+    .section_exp ul {
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+    }
+    .section_exp::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 30px solid rgb(69, 197, 167);
+        border-left: 300px solid transparent;
+    }
+    .section_exp li:nth-child(1) {
+        list-style: none;
+    }
+    .section_exp::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        border-top: 6px double rgba(244, 35, 59, 0.4);
+        border-bottom: 6px double rgba(244, 35, 59, 0.4);
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .section_table {
+        width: 80%;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+    .chef_about {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        transition: 1s;
+    }
+    .chef_about h1 {
+        margin-bottom: 50px;
+        transition: 1s;
+    }
+    .section_chef::before {
+        content: unset;
+    }
+    .chef_about::before {
+        height: 2px;
+        width: 100%;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -20px;
+        border-top: 6px double rgba(0, 151, 197, 0.3);
+        border-bottom: 6px double rgba(0, 151, 197, 0.3);
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
+    .section_chef::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-bottom: 50px solid #FFDC32;
+        border-left: 400px solid transparent;
+        transition: 1s;
+    }
+    /* 經驗 */
+    .section_exp {
+        position: relative;
+        font-size: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .section_exp li {
+        list-style: circle;
+        margin: 25px 0;
+        font-size: 16px;
+        width: 100%;
+        position: relative;
+        left: 25px;
+        padding-right: 30px;
+    }
+    .section_exp ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-grow: 1;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .exp_img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_exp img {
+        width: 100%;
+    }
+    .section_exp::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 90px solid rgb(69, 197, 167);
+        border-right: 600px solid transparent;
+    }
+    .section_exp li:nth-child(1) {
+        list-style: none;
+    }
+    .section_exp::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        border-top: 6px double rgba(244, 35, 59, 0.4);
+        border-bottom: 6px double rgba(244, 35, 59, 0.4);
+        clip-path: polygon(0 0, 100% 100%, 0 100%);
+    }
+    /* 麵包 */
+    .section_step a {
+        font-size: 30px;
+    }
+    .step_back {
+        padding: 20px;
+    }
+    .step_next {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .chef_about h1 {
+        margin-bottom: 100px;
+    }
+    .section_chef::after {
+        border-bottom: 110px solid #FFDC32;
+        border-left: 600px solid transparent;
+    }
+    /* 經驗 */
+    .section_exp ul {
+        position: unset;
+    }
+    .exp_img {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width:1200px) {}
